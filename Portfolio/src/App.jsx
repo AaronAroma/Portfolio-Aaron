@@ -1,10 +1,10 @@
 import "./App.css";
 import Porfile from "./assets/Mifoto.png";
-import cv from "./assets/AaronCV.pdf"
+import cv from "./assets/AaronCV.pdf";
 import Project1 from "./assets/Proyecto1.png";
 import Project2 from "./assets/Proyecto2.png";
 import Project3 from "./assets/Proyecto3.png";
-import Project4 from "./assets/Proyecto4.png"
+import Project4 from "./assets/Proyecto4.png";
 import Facebook from "./assets/facebook.svg";
 import LinkedIn from "./assets/linkedin.svg";
 import Instagram from "./assets/instagram.svg";
@@ -111,11 +111,12 @@ const App = () => {
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={Project1} className="w-full h-auto" />
-                <h3 className="text-2xl font-semibold mt-8">
-                  GeoDatos
-                </h3>
+                <h3 className="text-2xl font-semibold mt-8">GeoDatos</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                GeoDatos es una aplicación web que muestra datos de países en un formato paginado. Permite a los usuarios filtrar por continentes o actividades, ordenar los datos alfabéticamente o por población, y buscar países por nombre.
+                  GeoDatos es una aplicación web que muestra datos de países en
+                  un formato paginado. Permite a los usuarios filtrar por
+                  continentes o actividades, ordenar los datos alfabéticamente o
+                  por población, y buscar países por nombre.
                 </p>
                 <div className="flex mt-12 gap-2">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -128,12 +129,13 @@ const App = () => {
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={Project2} className="w-full h-auto" />
-                <h3 className="text-2xl font-semibold mt-8">
-                  Designer furniture store landing page
-                </h3>
+                <h3 className="text-2xl font-semibold mt-8">GetFit</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Responsive HTML/CSS layout for online store of designer
-                  furniture. HTML5, CSS3 (SCSS)
+                  Es un sitio de comercio electrónico de suplementos
+                  nutricionales y ropa deportiva. Ofrece una experiencia de
+                  compra segura, optimización SEO en progreso y seguimiento con
+                  Google Analytics. Proporciona soporte al cliente, incluyendo
+                  cambios y devoluciones.
                 </p>
                 <div className="flex gap-2 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -149,11 +151,12 @@ const App = () => {
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={Project3} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
-                  Landing page for front-end developer
+                  Portfolio personal
                 </h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Responsive HTML/CSS layout for landing page for front-end
-                  developer. HTML5, CSS3 (SCSS)
+                  Portfolio personal responsive hecho con ReactJS, CSS y
+                  Tailwind. Aca muestro mis proyectos, Tecnologias y
+                  habilidades, y te cuento mas sobre mi.
                 </p>
                 <div className="flex gap-4 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -166,12 +169,12 @@ const App = () => {
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={Project4} className="w-full h-auto" />
-                <h3 className="text-2xl font-semibold mt-8">
-                  Landing page for front-end developer
-                </h3>
+                <h3 className="text-2xl font-semibold mt-8">Rick and Morty</h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Responsive HTML/CSS layout for landing page for front-end
-                  developer. HTML5, CSS3 (SCSS)
+                  Esta pagina es una aplicación web que muestra datos de Rick
+                  and Morty en un formato paginado. Permite a los usuarios
+                  ordenar los datos alfabéticamente, y buscar personajes por
+                  nombre.
                 </p>
                 <div className="flex gap-4 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -182,111 +185,94 @@ const App = () => {
                   </button>
                 </div>
               </div>
-              
             </div>
           </div>
         </section>
-        {/* Technoglies section */}
         <section className="py-10" id="technologies">
           <div className="container m-auto px-4">
-            <h2 className="text-2xl font-semibold">Technologies</h2>
+            <h2 className="text-2xl font-semibold">tecnología</h2>
             <div className="mt-14">
               <div>
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">HTML</h2>
-                  <p className="text-gray-500">Advanced</p>
+                  <p className="text-gray-500">Avanzado</p>
                 </div>
                 <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">CSS, Sass & Bootstrap</h2>
-                  <p className="text-gray-500">Advanced</p>
+                  <h2 className="font-semibold">CSS, Tailwind</h2>
+                  <p className="text-gray-500">Avanzado</p>
                 </div>
                 <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">
-                    JavaScript, TypeScript, JQuery
-                  </h2>
-                  <p className="text-gray-500">Advanced</p>
+                  <h2 className="font-semibold">JavaScript</h2>
+                  <p className="text-gray-500">Avanzado</p>
                 </div>
                 <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-              </div>
-              <div className="mt-8">
-                <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">UI design in Figma</h2>
-                  <p className="text-gray-500">Advanced</p>
-                </div>
-                <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-              </div>
-              <div className="mt-8">
-                <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">Angular</h2>
-                  <p className="text-gray-500">Advanced</p>
-                </div>
-                <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">React</h2>
-                  <p className="text-gray-500">Advanced</p>
+                  <p className="text-gray-500">Avanzado</p>
                 </div>
                 <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">React Native</h2>
-                  <p className="text-gray-500">Advanced</p>
+                  <h2 className="font-semibold">PostgreSQL</h2>
+                  <p className="text-gray-500">Intermedio</p>
                 </div>
-                <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[65%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">Express</h2>
+                  <p className="text-gray-500">Intermedio</p>
+                </div>
+                <span className="w-[55%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">Vercel</h2>
+                  <p className="text-gray-500">Intermedio</p>
+                </div>
+                <span className="w-[55%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
             </div>
           </div>
         </section>
-        {/* Additional skills section */}
         <section>
           <div className="container m-auto px-4 py-14">
-            <h2 className="text-2xl font-semibold">
-              Additional technologies and skills
-            </h2>
+            <h2 className="text-2xl font-semibold">Soft Skills</h2>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-28 mt-12 w-[80%]">
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Git
+                  Github
                 </p>
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Wordpress
+                  Compromiso
                 </p>
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Teamwork
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Quick learning
+                Comunicación
                 </p>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Engagement
+                Resolución de problemas
                 </p>
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  B2 english
-                </p>
-              </div>
-              <div>
-                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  RWD
+                  B2 ingles
                 </p>
               </div>
             </div>
