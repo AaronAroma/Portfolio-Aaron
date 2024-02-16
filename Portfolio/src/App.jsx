@@ -121,7 +121,7 @@ const App = () => {
               <div className="after:bg-[url('./large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
                 <img
                   src={Porfile}
-                  className="relative z-10 w-[280px] m-auto sm:w-[590px]"
+                  className="relative z-10 w-[280px] m-auto sm:w-[520px]"
                 />
               </div>
             </div>
@@ -129,7 +129,7 @@ const App = () => {
         </section>
         <section id="projects">
           <div className="container m-auto px-4 sm:py-12">
-            <h2 className="text-2xl font-semibold">Projects</h2>
+            <h2 className="text-2xl font-semibold">Proyectos</h2>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={Project1} className="w-full h-auto" />
@@ -191,7 +191,7 @@ const App = () => {
                     rel="noopener noreferrer"
                     className="flex-1 cursor-pointer text-center text-center text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
                   >
-                    Checkout github
+                    Visitar GitHub
                   </a>
                 </div>
               </div>
@@ -211,7 +211,7 @@ const App = () => {
                     rel="noopener noreferrer"
                     className="flex-1 cursor-pointer text-center text-center text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
                   >
-                    Checkout github
+                    Visitar GitHub
                   </a>
                 </div>
               </div>
@@ -311,15 +311,30 @@ const App = () => {
         <section className="py-8" id="aboutme">
           <div className="container m-auto px-4">
             <h2 className="text-2xl font-semibold">About me</h2>
-            <p className="font-bold mt-12">
-              Soy un desarrollador web dedicado, especializado en transformar
-              ideas complejas en experiencias digitales intuitivas y atractivas.
-              Mi enfoque creativo y mi compromiso con los estándares de
-              accesibilidad me distinguen en el campo. Siempre estoy buscando el
-              próximo desafío para superar los límites de lo que es posible en
-              la web
+            <p className="mt-12">
+              Me llamo Aaron, tengo 19 años y nací en Estados Unidos, pero estoy
+              viviendo en Argentina. Terminé mis estudios como Desarrollador
+              Web. Me encanta enfocarme en la parte del rendimiento, para
+              ofrecer la mejor experiencia al usuario.
+            </p>
+            <p className="mt-2">
+              Cuento con experiencia desarrollando aplicaciones web responsivas,
+              y he creado un proyecto mezclando mis dos pasiones: la
+              programación y el deporte. Ayudando a la sociedad a acceder a una
+              vida fitness.
+            </p>
+            <p className="mt-2">
+              Planeo seguir expandiendo mis conocimientos en Desarrollo Web, con
+              un enfoque particular al front end. Estoy emocionado por las
+              oportunidades que vendrán y estoy comprometido a seguir creando
+              soluciones digitales que impacten positivamente a la sociedad.
+              Siempre estoy abierto a nuevos desafíos y a colaborar en proyectos
+              que promuevan la innovación y el crecimiento.
             </p>
           </div>
+        </section>
+        <section>
+          
         </section>
       </main>
       <footer>
