@@ -29,6 +29,27 @@ const App = () => {
     };
   }, []);
 
+  const handleDowload = () => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", cv, true);
+    xhr.responseType = "blob";
+
+    xhr.onload = function () {
+      const blob = new Blob([xhr.response], { type: "application/pdf" });
+
+      const link = document.createElement("a");
+      link.href = window.URL.createObjectURL(blob);
+
+      link.download = "AaronCV.pdf";
+
+      link.click();
+
+      window.URL.revokeObjectURL(link.href);
+    };
+
+    xhr.send();
+  };
+
   return (
     <div className="max-w-4xl m-auto relative">
       <header
@@ -85,14 +106,15 @@ const App = () => {
               </div>
               <div>
                 <p className="mt-4 text-gray-400">
-                  Soy un apasionado por la tecnología y la creación de
-                  experiencias web excepcionales
+                  En el mundo del desarrollo Full Stack, cada día es una nueva
+                  lección
                 </p>
-                <a download="Curriculum Aaron-Aroma" href={cv}>
-                  <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Descargar CV
-                  </button>
-                </a>
+                <button
+                  className="px-8 shadow-gray-500 shadow-md py-5 mt-9 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+                  onClick={handleDowload}
+                >
+                  Descargar CV
+                </button>
               </div>
             </div>
             <div className="relative">
@@ -119,12 +141,14 @@ const App = () => {
                   por población, y buscar países por nombre.
                 </p>
                 <div className="flex mt-12 gap-2">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
-                  </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                    Checkout github
-                  </button>
+                  <a
+                    href="https://github.com/AaronAroma/PI-Country-AaronAroma"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 cursor-pointer text-center text-center text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+                  >
+                    Visitar Github
+                  </a>
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
@@ -138,12 +162,14 @@ const App = () => {
                   cambios y devoluciones.
                 </p>
                 <div className="flex gap-2 mt-12">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
-                  </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                    Checkout github
-                  </button>
+                  <a
+                    href="https://github.com/GetFitORG/GetFit-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 cursor-pointer text-center text-center text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+                  >
+                    Visitar GitHub
+                  </a>
                 </div>
               </div>
             </div>
@@ -159,12 +185,14 @@ const App = () => {
                   habilidades, y te cuento mas sobre mi.
                 </p>
                 <div className="flex gap-4 mt-12">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
-                  </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                  <a
+                    href="https://github.com/AaronAroma/Portfolio-Aaron"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 cursor-pointer text-center text-center text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+                  >
                     Checkout github
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
@@ -177,12 +205,14 @@ const App = () => {
                   nombre.
                 </p>
                 <div className="flex gap-4 mt-12">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
-                  </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                  <a
+                    href="https://github.com/pi-rym/PI-AaronAroma"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 cursor-pointer text-center text-center text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+                  >
                     Checkout github
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -260,14 +290,14 @@ const App = () => {
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                Comunicación
+                  Comunicación
                 </p>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                Resolución de problemas
+                  Resolución de problemas
                 </p>
               </div>
               <div>
@@ -281,39 +311,14 @@ const App = () => {
         <section className="py-8" id="aboutme">
           <div className="container m-auto px-4">
             <h2 className="text-2xl font-semibold">About me</h2>
-            <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
-              <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
-                <p>
-                  Graduated KTC (Krasnodar Technical College) and for about two
-                  years worked with high voltage (35, 110kV) substations as the
-                  specialty electrician of emergency mobile crew. Later
-                  qualified as a Crossfit trainer.
-                </p>
-              </div>
-              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
-                <p>
-                  Underwent a digital marketing course and started to work as a
-                  PPC and project manager in a local web studio. After 3 months
-                  started my own freelance practice.
-                </p>
-              </div>
-              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
-                <p>
-                  Became more interested in IT and decided to try programming.
-                  Underwent Java course and made a project.
-                </p>
-              </div>
-              <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
-                <p>
-                  Worked out in which field I want to build a developer's career
-                  and started to learn Frontend Development.
-                </p>
-              </div>
-            </div>
+            <p className="font-bold mt-12">
+              Soy un desarrollador web dedicado, especializado en transformar
+              ideas complejas en experiencias digitales intuitivas y atractivas.
+              Mi enfoque creativo y mi compromiso con los estándares de
+              accesibilidad me distinguen en el campo. Siempre estoy buscando el
+              próximo desafío para superar los límites de lo que es posible en
+              la web
+            </p>
           </div>
         </section>
       </main>
